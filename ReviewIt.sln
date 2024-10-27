@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1F284FD4-7B8F-4926-9A08-23A679F86049}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReviewIt.Api", "src\ReviewIt.Api\ReviewIt.Api.csproj", "{35E36116-BD91-4F0B-B254-A0F59F2E0E3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReviewIt.Application", "src\ReviewIt.Application\ReviewIt.Application.csproj", "{95E4C1B8-F822-4215-B439-A1B87C89310A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReviewIt.Domain", "src\ReviewIt.Domain\ReviewIt.Domain.csproj", "{61135931-53C4-4F10-83E5-687A25965332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReviewIt.Infra", "src\ReviewIt.Infra\ReviewIt.Infra.csproj", "{4409703F-0313-4A65-A68E-E08126DDF369}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReviewIt.Infra.Data.DynamoDB", "src\ReviewIt.Infra.Data.DynamoDB\ReviewIt.Infra.Data.DynamoDB.csproj", "{F93F2533-79D1-4B33-BFFA-710AF8DC600A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3EC7BAF9-DBA5-4F29-9747-08F29F2DB903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReviewIt.Tests", "test\ReviewIt.Tests\ReviewIt.Tests.csproj", "{92E3A015-DBAE-4F1F-ABFB-C85B1E0E7EBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35E36116-BD91-4F0B-B254-A0F59F2E0E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E36116-BD91-4F0B-B254-A0F59F2E0E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E36116-BD91-4F0B-B254-A0F59F2E0E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E36116-BD91-4F0B-B254-A0F59F2E0E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95E4C1B8-F822-4215-B439-A1B87C89310A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95E4C1B8-F822-4215-B439-A1B87C89310A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95E4C1B8-F822-4215-B439-A1B87C89310A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95E4C1B8-F822-4215-B439-A1B87C89310A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61135931-53C4-4F10-83E5-687A25965332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61135931-53C4-4F10-83E5-687A25965332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61135931-53C4-4F10-83E5-687A25965332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61135931-53C4-4F10-83E5-687A25965332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4409703F-0313-4A65-A68E-E08126DDF369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4409703F-0313-4A65-A68E-E08126DDF369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4409703F-0313-4A65-A68E-E08126DDF369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4409703F-0313-4A65-A68E-E08126DDF369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93F2533-79D1-4B33-BFFA-710AF8DC600A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93F2533-79D1-4B33-BFFA-710AF8DC600A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93F2533-79D1-4B33-BFFA-710AF8DC600A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93F2533-79D1-4B33-BFFA-710AF8DC600A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92E3A015-DBAE-4F1F-ABFB-C85B1E0E7EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92E3A015-DBAE-4F1F-ABFB-C85B1E0E7EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92E3A015-DBAE-4F1F-ABFB-C85B1E0E7EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92E3A015-DBAE-4F1F-ABFB-C85B1E0E7EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35E36116-BD91-4F0B-B254-A0F59F2E0E3E} = {1F284FD4-7B8F-4926-9A08-23A679F86049}
+		{95E4C1B8-F822-4215-B439-A1B87C89310A} = {1F284FD4-7B8F-4926-9A08-23A679F86049}
+		{61135931-53C4-4F10-83E5-687A25965332} = {1F284FD4-7B8F-4926-9A08-23A679F86049}
+		{4409703F-0313-4A65-A68E-E08126DDF369} = {1F284FD4-7B8F-4926-9A08-23A679F86049}
+		{F93F2533-79D1-4B33-BFFA-710AF8DC600A} = {1F284FD4-7B8F-4926-9A08-23A679F86049}
+		{92E3A015-DBAE-4F1F-ABFB-C85B1E0E7EBC} = {3EC7BAF9-DBA5-4F29-9747-08F29F2DB903}
+	EndGlobalSection
+EndGlobal
