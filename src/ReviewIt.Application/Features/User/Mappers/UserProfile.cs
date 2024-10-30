@@ -10,6 +10,8 @@ public sealed class UserProfile : Profile
 {
     public UserProfile()
     {
+        #region Create User
+
         _ = CreateMap<CreateUserRequest, DomainEntity.User>()
             .ForMember(dest => dest.Id, src => src.MapFrom(c => c.Id))
             .ForMember(dest => dest.Name, src => src.MapFrom(c => c.Name))
@@ -23,5 +25,9 @@ public sealed class UserProfile : Profile
 
         _ = CreateMap<CreateUserResponse, ApiResponse<CreateUserResponse>>()
             .ForMember(dest => dest.Data, src => src.MapFrom(c => c));
+
+        #endregion
+
+
     }
 }

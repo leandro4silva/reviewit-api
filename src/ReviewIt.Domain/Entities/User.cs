@@ -3,7 +3,6 @@ using ReviewIt.Domain.SeedWork;
 
 namespace ReviewIt.Domain.Entities;
 
-
 [DynamoDBTable("User")]
 public sealed class User : AggregateRoot
 {

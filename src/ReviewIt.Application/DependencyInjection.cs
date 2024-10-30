@@ -2,6 +2,8 @@
 using ReviewIt.Application.Features.User.Abstraction;
 using ReviewIt.Application.Features.User.Mappers;
 using ReviewIt.Application.Features.User.Services;
+using ReviewIt.Infra.LogAudit.Abstractions;
+using ReviewIt.Infra.LogAudit.Services;
 using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
@@ -26,6 +28,8 @@ public static class DependencyInjection
     private static IServiceCollection AddServices(this IServiceCollection services)
     {
         services.AddScoped<ICreateUserService, CreateUserService>();
+        services.AddScoped<ILogAuditService, LogAuditService>();
+
         return services;
     }
 
